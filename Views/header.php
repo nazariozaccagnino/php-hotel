@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/script.js" type="text/javascript" defer></script>
-    <title>Steam</title>
+    <title>PHP hotel</title>
 
 </head>
 
 <header>
-    HEADER
+    <div class="container">
+        <h1>Hotels</h1>
+    </div>
 </header>
