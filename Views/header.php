@@ -24,9 +24,9 @@
             <form action="index.php" method="GET" class="d-flex align-items-center">
                 <div>
                     <select class="form-select" multiple name="stats">
+                        <option value="all">All</option>
                         <option value="parking">Parcheggio presente</option>
                         <option value="vote">3 stelle o più</option>
-                        <option value="distance_to_center">Minor distanza dal centro</option>
                     </select>
                 </div>
                 <div><button class="btn btn-success" type="submit">Filtra</button></div>

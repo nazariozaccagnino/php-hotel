@@ -10,7 +10,7 @@
     </thead>
 
     <tbody>
-        <?php foreach ($hotels as $data) {
+        <?php foreach ($copydb as $data) {
             echo "<tr>
                     <th>{$data['name']}</th>
                     <td>{$data['description']}</td>
