@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table table-info table-striped table-hover">
     <thead>
         <tr>
             <th scope="col">Nome</th>
