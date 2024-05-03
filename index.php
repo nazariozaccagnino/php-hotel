@@ -1,8 +1,12 @@
 <?php
+session_start();
+if(!isset($_SESSION['logged'])){
+    session_destroy();
+    header('Location: loginpage.php');
+}
 include __DIR__ . "/Models/model.php";
 // var_dump($hotels);
 include __DIR__ . "/Views/header.php";
-
 $copydb = $hotels;
 // var_dump($copydb);
 if (!empty($_GET['stats'])) {
