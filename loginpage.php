@@ -19,16 +19,17 @@ include __DIR__ . "/Controllers/auth.php";
     <link grity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 
-    
+
     <title>Login</title>
 
 </head>
 
 <body>
-    <div class="container login">
-        <div class="d-flex justify-content-center align-items-center">            
-            <form id="loginform" action="loginpage.php" method="POST">
-            <h1 class="text-center mt-4">Please log-in</h1>
+    <div class="container">
+        <div class="d-flex justify-content-around align-items-center mt-5 login">
+            <div class="logo d-flex justify-content-center align-items-center"><img src="./images/logo_hotel_3_copia.png" alt=""></div>
+            <form id="loginform" action="loginpage.php" method="POST" class="flex-grow-1 p-2">
+                <h1 class="text-center mt-4">Please log-in</h1>
                 <div class="mb-3">
                     <label class="form-label">Email address</label>
                     <input type="email" class="form-control" name="email">
@@ -37,8 +38,10 @@ include __DIR__ . "/Controllers/auth.php";
                     <label class="form-label">Password</label>
                     <input type="password" class="form-control" name="password">
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
-                <?php echo $loginfailed?>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+                <?php echo $loginfailed ?>
             </form>
         </div>
     </div>

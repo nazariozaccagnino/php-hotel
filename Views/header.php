@@ -18,11 +18,11 @@
 </head>
 
 <header>
-    <div class="container d-flex justify-content-between">
+    <div class="container d-flex justify-content-between align-items-center">
         <h1>Hotels</h1>
         <div>
             <form action="index.php" method="GET" class="d-flex align-items-center">
-                <div>
+                <div class="m-2">
                     <select class="form-select" name="stats">
                         <option value="">All</option>
                         <option value="parking">Parcheggio presente</option>

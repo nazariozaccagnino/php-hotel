@@ -1,7 +1,12 @@
 body{
     background-image: url("../images/hotel_login_bg.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: contain; */
     color: white;
-    background-position: 50% 20%;
+}
+.login{
+    background-color: rgba(154, 154, 154, 0.748);
+}
+.logo img{
+    width: 30%;
 }
