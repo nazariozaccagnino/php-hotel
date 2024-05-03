@@ -2,6 +2,7 @@
 include __DIR__ . "/Controllers/auth.php";
 
 
+
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +38,7 @@ include __DIR__ . "/Controllers/auth.php";
                     <input type="password" class="form-control" name="password">
                 </div>
                 <button type="submit" class="btn btn-primary">Login</button>
-                
+                <?php echo $loginfailed?>
             </form>
         </div>
     </div>

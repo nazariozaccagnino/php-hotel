@@ -1,7 +1,10 @@
 <?php
 session_start();
+if(isset($_SESSION['logged'])){
+    header('Location: index.php');
+};
 include __DIR__ . "/../Models/user.php";
-$loginfailed = '<div class="mt-4 p-1 bg-danger rounded-1">E-mail o password errate, riprovare</div>';
+$loginfailed = '';
 
 if(!empty($_POST['email']) && !empty($_POST['password'])){
     $email = $_POST['email'];
@@ -14,6 +17,6 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
         $_SESSION['logged'] = true;
         header ('Location: index.php');
     } else{
-        echo $loginfailed;
+        $loginfailed = '<div class="mt-4 p-1 bg-danger rounded-1">E-mail o password errate, riprovare</div>';
     }
 };
